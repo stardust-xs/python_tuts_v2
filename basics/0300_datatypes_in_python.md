@@ -16,11 +16,11 @@ If you want to understand datatypes my way, we'll classify the data into **two**
 
 ### Single Type
 
-Single type data (object) is a **single entity** assigned to a variable. Strings, Numbers, NoneType (**[None](https://docs.python.org/3/library/constants.html?highlight=nonetype#None)**), Boolean (**[bool](https://docs.python.org/3/library/functions.html#bool)**), etc are examples of Single type data. We can consider them as **constants** or **[Literals](https://render.githubusercontent.com/view/ipynb?commit=f59d18d2eb0a7b939a8e53bfdfe35c20ae48536f&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f78616d6573332f707974686f6e5f7475746f7269616c732f663539643138643265623061376239333961386535336266646665333563323061653438353336662f6261736963732f303230305f7661726961626c65735f696e5f707974686f6e2e6970796e62&nwo=xames3%2Fpython_tutorials&path=basics%2F0200_variables_in_python.ipynb&repository_id=283241123&repository_type=Repository#Introduction). Read more here about [**built-in constants**](https://docs.python.org/3/library/constants.html?highlight=nonetype#built-in-constants) in python.
+Single type data (object) is a **single entity** assigned to a variable. Strings, Numbers, NoneType (**[None](https://docs.python.org/3/library/constants.html?highlight=nonetype#None)**), Boolean (**[bool](https://docs.python.org/3/library/functions.html#bool)**), etc are examples of Single type data. We can consider them as **constants** or **[Literals](https://github.com/xames3/python_tuts_v2/blob/master/basics/0200_variables_in_python.md#introduction)**. Read more here about **[built-in constants](https://docs.python.org/3/library/constants.html?highlight=nonetype#built-in-constants)** in python.
 
 #### Strings (str)
 
-By definition, *strings are [**immutable**] sequences or collections of **characters***.
+By definition, *strings are **[immutable](https://github.com/xames3/python_tuts_v2/blob/master/basics/0301_types_of_data_in_python.md#immutable-objects)** sequences or collections of **characters***.
 
 Strings are what I like to call, "**Kachha Limbu**" in python. It behaves like both Single Type and a Container Type object. Strings are often referred as **Text Sequence Type** as they are literally a sequence (collection) of **characters** or **texts**. Unlike C, in python we don't have a dedicated **char** datatype.
 
@@ -52,7 +52,7 @@ You guys have a better suggestion?
 
 There are three distinct numeric types: **integers**, **floating point** numbers, and **complex** numbers. In addition, Booleans are a subtype (child) of integers. Integers have **unlimited precision**.
 
-Numbers are created by numeric literals (constants **0-9**). Numeric literals containing a decimal point (**.**) or an exponent sign (**e**) yield floating point numbers. Adding **'j'** or **'J'** to a numeric literal yields an imaginary number (a complex number with a zero real part) which you can add to an integer or float to get a complex number with real and imaginary parts. They support all sort of arithmetics. Please see [**this**](https://render.githubusercontent.com/view/ipynb?commit=f59d18d2eb0a7b939a8e53bfdfe35c20ae48536f&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f78616d6573332f707974686f6e5f7475746f7269616c732f663539643138643265623061376239333961386535336266646665333563323061653438353336662f6261736963732f303230315f6f7065726174696f6e735f6f6e5f7661726961626c65732e6970796e62&nwo=xames3%2Fpython_tutorials&path=basics%2F0201_operations_on_variables.ipynb&repository_id=283241123&repository_type=Repository#Operations-on-Variables) for quick reference.
+Numbers are created by numeric literals (constants **0-9**). Numeric literals containing a decimal point (**.**) or an exponent sign (**e**) yield floating point numbers. Adding **'j'** or **'J'** to a numeric literal yields an imaginary number (a complex number with a zero real part) which you can add to an integer or float to get a complex number with real and imaginary parts. They support all sort of arithmetics. Please see **[this](https://github.com/xames3/python_tuts_v2/blob/master/basics/0201_operations_on_variables.md#arithmetic-operations)** for quick reference.
 
 These are few ways of representing Integers in python:
 
@@ -86,7 +86,7 @@ var_2 = 420 + 69j       # With real part
 
 #### None (NoneType)
 
-By definition, *None represents the absence of a value or [**null**](https://docs.python.org/3/library/stdtypes.html?highlight=list#the-null-object).*
+By definition, *None represents the absence of a value or **[null](https://docs.python.org/3/library/stdtypes.html?highlight=list#the-null-object)**.*
 
 None is a **singleton** (fancy advance concept that we will explore later). Python uses the keyword **None** to define null objects and variables.
 
@@ -112,7 +112,7 @@ xa_is_mortal = False
 
 ### Container Type
 
-Container objects in this context means any python object that holds multiple elements. In simple terms, containers are exactly what it sounds like - they contain **elements**. These containers are special and play very important role in python's ecosystem. Strings, Sequences ([**list**](https://docs.python.org/3/library/stdtypes.html?highlight=list#list)/[**tuple**](https://docs.python.org/3/library/stdtypes.html?highlight=list#tuple)), Dictionaries ([**dict**](https://docs.python.org/3/library/stdtypes.html?highlight=list#mapping-types-dict)) and Sets ([**set**](https://docs.python.org/3/library/stdtypes.html?highlight=list#set-types)) etc are examples of Container type data.
+Container objects in this context means any python object that holds multiple elements. In simple terms, containers are exactly what it sounds like - they contain **elements**. These containers are special and play very important role in python's ecosystem. Strings, Sequences (**[list](https://docs.python.org/3/library/stdtypes.html?highlight=list#list)**/**[tuple](https://docs.python.org/3/library/stdtypes.html?highlight=list#tuple)**), Dictionaries (**[dict](https://docs.python.org/3/library/stdtypes.html?highlight=list#mapping-types-dict)**) and Sets (**[set](https://docs.python.org/3/library/stdtypes.html?highlight=list#set-types)**) etc are examples of Container type data.
 
 #### Lists (list)
 
@@ -121,7 +121,7 @@ Lists are probably one of the most used and simplest datatype (data-structure) i
 Technically, a "*List is an **ordered** collection of elements.*"
 
 But what does **ordered** means? Ordered means having **index** and retaining the **order** of creation in layman terms.
-Lists have [**indexes**](https://en.wikipedia.org/wiki/Index_notation#In_computing) or **index notations**. Hence, we can access elements of a list using its **index** position. In python, like most of the programming languages the index starts with **zero**.
+Lists have **[indexes](https://en.wikipedia.org/wiki/Index_notation#In_computing)** or **index notations**. Hence, we can access elements of a list using its **index** position. In python, like most of the programming languages the index starts with **zero**.
 
 Lists are usually written with **"\[\]"** (square brackets) in python.
 

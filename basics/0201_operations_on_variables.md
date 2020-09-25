@@ -53,7 +53,7 @@ total = first_operand - second_operand # total = 420
 
 ### Multiplication
 
-Multiplication is also **commutative** and **associative** like addition and it is [**distributive**](https://en.wikipedia.org/wiki/Distributive_property) as well.
+Multiplication is also **commutative** and **associative** like addition and it is **[distributive](https://en.wikipedia.org/wiki/Distributive_property)** as well.
 
 ```python
 first_operand, second_operand = 42, 10
@@ -116,7 +116,7 @@ total = first_operand % second_operand # total = 0
 
 ### Exponentiations
 
-[**Exponentiation**](https://en.wikipedia.org/wiki/Exponentiation) or Powers in Python are represented using **"\*\*"** (double asterisk) operator. Like Modulus, the output of Exponentiation operation could also be either **float** or **integer** depending upon the **type of the operands**.
+**[Exponentiation](https://en.wikipedia.org/wiki/Exponentiation)** or Powers in Python are represented using **"\*\*"** (double asterisk) operator. Like Modulus, the output of Exponentiation operation could also be either **float** or **integer** depending upon the **type of the operands**.
 
 ```python
 first_operand, second_operand = 2, 3

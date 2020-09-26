@@ -41,7 +41,7 @@ It **pads** string with the specified character and takes **two** arguments.
 
 ### str.count()
 
-It counts the occurrences of a **substring** (word/sentence) in the given string. It takes **three** arguments.
+It counts the occurrences of a **substring** (word/sentence) in the given string and takes **three** arguments.
 
 - **substring** - String that needs to be counted.
 - **start** (optional) - Starting index from where the substring needs to be searched, default: **0** (start of the string).
@@ -55,11 +55,10 @@ It counts the occurrences of a **substring** (word/sentence) in the given string
 
 ### str.encode()
 
-It **encodes** the string. Converting normal string to byte-string is called as **encoding**. Python supports various encoding standards like **Unicode**, **ASCII**, **ISO**, etc. You can find more information **[here](https://docs.python.org/3/library/codecs.html#standard-encodings)**.
+It **encodes** the string. Converting normal string to byte-string is called as **encoding**. Python supports various encoding standards like **Unicode (UTF-8)**, **ASCII**, **ISO**, etc. You can find more information **[here](https://docs.python.org/3/library/codecs.html#standard-encodings)**.
+This method takes **two** arguments.
 
-It takes **two** arguments.
-
-- **encoding** (optional)  - Encoding type or the Codecs, default: **utf-8**.
+- **encoding** (optional)  - Encoding type or the Codecs, default: **utf-8 (Unicode Transformation Format - 8)**.
 - **errors** (optional)  - Encoding failure response (substitution used), default: **strict**.
 
 **Note:** There are multiple error responses:

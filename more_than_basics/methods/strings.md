@@ -135,3 +135,148 @@ Basically, it is best used for substituting values in a static string with dynam
 >>> print(string.format(name="XA", app="GitHub")) # Using it as kwargs
 >>> print(string.format(name="Pranali", app="Flask"))
 ```
+
+### str.format_map()
+
+It **formats** the string as per expectation using a **dictionary**. It is similar to **str.format()** method but takes only **one** argument.
+
+- **mapping** - Dictionary of arguments to expand/replace in the **"{}"** placeholder.
+
+```python
+>>> string = "{name} is pretty active on {game}"
+>>> mapping = {"name": "XA", "game": "YouTube"}
+>>> print(string.format_map(mapping))
+```
+
+### str.index()
+
+Similar to **str.find()**, it return the **index** position of the substring, if present else it will raise **ValueError**.
+This method takes **three** arguments.
+
+- **sub** - Substring to be searched.
+- **start** (optional) - Starting index from where the substring needs to be searched, default: **0** (start of the string).
+- **end** (optional) - Ending index till where the substring needs to be searched, default: total length of characters - 1.
+
+```python
+>>> string = "I'm XA. People call me XA for good reason now. They keep chanting XA! XA!"
+>>> print(string.index("XA"))
+>>> print(string.index("XA", 10, 30))
+>>> print(string.index("XAMES3"))
+```
+
+### str.isalnum()
+
+It checks if all the characters in string are **alphanumeric** (only alphabets and numbers) characters. If not returns **False**.
+
+```python
+>>> string = "XAMES3"
+>>> print(string.isalnum())
+>>>
+>>> string = "XAMES3 is learning Java"
+>>> print(string.isalnum())
+```
+
+### str.isalpha()
+
+It checks if all the characters in string are only **alphabets**. If not returns **False**.
+
+```python
+>>> string = "XA"
+>>> print(string.isalpha())
+>>>
+>>> string = "XAMES3 is still learning Java"
+>>> print(string.isalpha())
+```
+
+### str.isdecimal()
+
+It checks if all the characters in string are only **decimals**. If not returns **False**.
+Here, decimal means just pure integers no subscripts, no superscripts and no fractions.
+
+```python
+>>> string = "69"
+>>> print(string.isdecimal())
+>>>
+>>> string = "XAMES3"
+>>> print(string.isdecimal())
+>>>
+>>> string = "4²"
+>>> print(string.isdecimal())
+```
+
+### str.isdigit()
+
+It checks if all the characters in string are only **digits**. If not returns **False**.
+Here, digit means integers with support for Unicode based subscripts and superscripts but no fractions.
+
+```python
+>>> string = "69"
+>>> print(string.isdigit())
+>>>
+>>> string = "½"
+>>> print(string.isdigit())
+>>>
+>>> string = "4²"
+>>> print(string.isdigit())
+```
+
+### str.isidentifier()
+
+It checks if the string could be used as a **valid identifier**. If not returns **False**.
+
+```python
+>>> string = "xames3"
+>>> print(string.isidentifier())
+>>>
+>>> string = "_xam"
+>>> print(string.isidentifier())
+>>>
+>>> string = "3semax"
+>>> print(string.isidentifier())
+```
+
+### str.islower()
+
+It checks if all the characters in the string are in **lowercase**. If not returns **False**.
+
+```python
+>>> string = "xames3"
+>>> print(string.islower())
+>>>
+>>> string = "XA is a good man"
+>>> print(string.islower())
+>>>
+>>> string = "xa is a really good man"
+>>> print(string.islower())
+```
+
+### str.isnumeric()
+
+It checks if all the characters in string are only **numbers**. If not returns **False**.
+Here, numeric means numbers with support for Unicode based subscripts, superscripts, fractions, roman numerals, etc.
+
+```python
+>>> string = "xames3"
+>>> print(string.isnumeric())
+>>>
+>>> string = "4²"
+>>> print(string.isnumeric())
+>>>
+>>> string = "½"
+>>> print(string.isnumeric())
+```
+
+### str.isprintable()
+
+It checks if all the characters in the string are **printable** (letters, symbols, digits, punctuation and whitespace) or if the string is empty. If not returns **False**.
+
+```python
+>>> string = "xames3"
+>>> print(string.isprintable())
+>>>
+>>> string = ""
+>>> print(string.isprintable())
+>>>
+>>> string = "Hello\nWorld"
+>>> print(string.isprintable())
+```

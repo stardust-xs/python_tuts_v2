@@ -1,5 +1,9 @@
 xa = "I'm XAMES3 and I can do whatever dafaq I want!"
 
+
+print(xa[-5:]) # Pranali's version
+
+
 def slice(string: str,
           start: int = None,
           stop: int = None,
@@ -22,6 +26,7 @@ print("XA:\n", (xa), "\nYA:\n", (ya))
 
 
 '''
+
 https://gist.github.com/nicolasdao/a7adda51f2f185e8d2700e1573d8a633
 https://www.freecodecamp.org/news/how-open-source-licenses-work-and-how-to-add-them-to-your-projects-34310c3cf94/
 

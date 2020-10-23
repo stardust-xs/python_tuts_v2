@@ -69,4 +69,4 @@ xa = "XA"
 #   print("XA")
 
 xa = 0
-while xa < 10:print(xa);xa+=1;print("XA")
+# while xa < 10:print(xa);xa+=1;print("XA")
